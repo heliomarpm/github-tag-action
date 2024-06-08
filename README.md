@@ -66,11 +66,11 @@ jobs:
 ## Workflow
 
 * Add this action to your repo
-* Commit some changes with message contains `#major` or `#patch` or `#patch`
+* Commit some changes with message contains `#major` or `#minor` or `#patch`
 * Either push to master or open a PR
 * On push (or merge) to `master`, the action will:
   * Get latest tag
-  * Generate tag if commit message contains `#major` or `#patch` or `#patch`
+  * Generate tag if commit message contains `#major` or `#minor` or `#patch`
     > ***Note:*** This action **will not** push the tag if the `HEAD` commit has already been tagged. If two or more keywords are present, the highest-ranking one will take precedence.
   * Pushes tag to GitHub
 
